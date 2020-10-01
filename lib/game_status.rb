@@ -23,4 +23,9 @@ def draw?(board)
     true 
   end
 end
-    
+
+def over?(board)
+  if full?(board) || won?(board) != nil
+    true
+  end
+end
