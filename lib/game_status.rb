@@ -17,4 +17,10 @@ def full?(board)
     index == " " || index == nil
   end
 end
-      
+
+def draw?(board)
+  if full?(board) && won?(board) == nil
+    true 
+  end
+end
+    
